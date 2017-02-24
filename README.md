@@ -6,3 +6,5 @@ Place *.java files in this folder and type
 ```
 C:\X3DJSAIL> compile.bat
 ```
+
+You may need to add the stylesheets to the ..\lib\stylesheets folder
