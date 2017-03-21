@@ -73,150 +73,147 @@ import org.web3d.x3d.sai.Time.*;
 import org.web3d.x3d.sai.VolumeRendering.*;
 public class qq3 {
 	public static void main(String[] args) {
-		X3DObject X3D0 = new X3DObject();
-		headObject head0_0 = new headObject();
-		metaObject meta0_0_0 = new metaObject();
-		meta0_0_0.setName("title");
-		meta0_0_0.setContent("qq3.x3d");
-		head0_0.addMeta(meta0_0_0);
-		metaObject meta0_0_2 = new metaObject();
-		meta0_0_2.setName("creator");
-		meta0_0_2.setContent("John Carlson");
-		head0_0.addMeta(meta0_0_2);
-		metaObject meta0_0_4 = new metaObject();
-		meta0_0_4.setName("translator");
-		meta0_0_4.setContent("John Carlson");
-		head0_0.addMeta(meta0_0_4);
-		metaObject meta0_0_6 = new metaObject();
-		meta0_0_6.setName("created");
-		meta0_0_6.setContent("11 Jan 2015");
-		head0_0.addMeta(meta0_0_6);
-		metaObject meta0_0_8 = new metaObject();
-		meta0_0_8.setName("revised");
-		meta0_0_8.setContent("11 Jan 2015");
-		head0_0.addMeta(meta0_0_8);
-		metaObject meta0_0_10 = new metaObject();
-		meta0_0_10.setName("description");
-		meta0_0_10.setContent("12 extrusions to test prototype expander");
-		head0_0.addMeta(meta0_0_10);
-		metaObject meta0_0_12 = new metaObject();
-		meta0_0_12.setName("identifier");
-		meta0_0_12.setContent("http://coderextreme.net/x3d/qq3.x3d");
-		head0_0.addMeta(meta0_0_12);
-		metaObject meta0_0_14 = new metaObject();
-		meta0_0_14.setName("generator");
-		meta0_0_14.setContent("manual");
-		head0_0.addMeta(meta0_0_14);
-		X3D0.setHead(head0_0);
-		SceneObject Scene0_2 = new SceneObject();
-		ProtoDeclareObject ProtoDeclare0_2_0 = new ProtoDeclareObject();
-		ProtoBodyObject ProtoBody0_2_0_0 = new ProtoBodyObject();
-		GroupObject Group0_2_0_0_0 = new GroupObject();
-		CommentsBlock commentsBlock0_2_0_0_0_0 = new CommentsBlock("left");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_0);
-		TransformObject Transform0_2_0_0_0_1 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_1_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_1_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_1_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_1_0_0.setMaterial(Material0_2_0_0_0_1_0_0_0);
-		Material0_2_0_0_0_1_0_0_0.setDEF("MaterialLeftDown");
-		Material0_2_0_0_0_1_0_0_0.setDiffuseColor(new float[] {0.7f,1f,0f});
-		Shape0_2_0_0_0_1_0.setAppearance(Appearance0_2_0_0_0_1_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_1_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_1_0.setGeometry(Extrusion0_2_0_0_0_1_0_2);
-		Extrusion0_2_0_0_0_1_0_2.setSpine(new float[] {-2.5f,0f,0f,-1.5f,0f,0f});
-		Extrusion0_2_0_0_0_1_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_1_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Transform0_2_0_0_0_1.addChild(Shape0_2_0_0_0_1_0);
-		Transform0_2_0_0_0_1.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_1);
-		CommentsBlock commentsBlock0_2_0_0_0_3 = new CommentsBlock("right");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_3);
-		TransformObject Transform0_2_0_0_0_4 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_4_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_4_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_4_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_4_0_0.setMaterial(Material0_2_0_0_0_4_0_0_0);
-		Material0_2_0_0_0_4_0_0_0.setDEF("MaterialUpRight");
-		Material0_2_0_0_0_4_0_0_0.setDiffuseColor(new float[] {0f,0.7f,1f});
-		Shape0_2_0_0_0_4_0.setAppearance(Appearance0_2_0_0_0_4_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_4_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_4_0.setGeometry(Extrusion0_2_0_0_0_4_0_2);
-		Extrusion0_2_0_0_0_4_0_2.setSpine(new float[] {1.5f,0f,0f,2.5f,0f,0f});
-		Extrusion0_2_0_0_0_4_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_4_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Transform0_2_0_0_0_4.addChild(Shape0_2_0_0_0_4_0);
-		Transform0_2_0_0_0_4.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_4);
-		CommentsBlock commentsBlock0_2_0_0_0_6 = new CommentsBlock("up");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_6);
-		TransformObject Transform0_2_0_0_0_7 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_7_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_7_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_7_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_7_0_0.setMaterial(Material0_2_0_0_0_7_0_0_0);
-		Material0_2_0_0_0_7_0_0_0.setUSE("MaterialUpRight");
-		Shape0_2_0_0_0_7_0.setAppearance(Appearance0_2_0_0_0_7_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_7_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_7_0.setGeometry(Extrusion0_2_0_0_0_7_0_2);
-		Extrusion0_2_0_0_0_7_0_2.setSpine(new float[] {0f,1.5f,0f,0f,2.5f,0f});
-		Extrusion0_2_0_0_0_7_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_7_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Transform0_2_0_0_0_7.addChild(Shape0_2_0_0_0_7_0);
-		Transform0_2_0_0_0_7.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_7);
-		CommentsBlock commentsBlock0_2_0_0_0_9 = new CommentsBlock("down");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_9);
-		TransformObject Transform0_2_0_0_0_10 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_10_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_10_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_10_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_10_0_0.setMaterial(Material0_2_0_0_0_10_0_0_0);
-		Material0_2_0_0_0_10_0_0_0.setUSE("MaterialLeftDown");
-		Shape0_2_0_0_0_10_0.setAppearance(Appearance0_2_0_0_0_10_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_10_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_10_0.setGeometry(Extrusion0_2_0_0_0_10_0_2);
-		Extrusion0_2_0_0_0_10_0_2.setSpine(new float[] {0f,-2.5f,0f,0f,-1.5f,0f});
-		Extrusion0_2_0_0_0_10_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_10_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Transform0_2_0_0_0_10.addChild(Shape0_2_0_0_0_10_0);
-		Transform0_2_0_0_0_10.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_10);
-		ProtoBody0_2_0_0.addChild(Group0_2_0_0_0);
-		ProtoDeclare0_2_0.setProtoBody(ProtoBody0_2_0_0);
-		ProtoDeclare0_2_0.setName("Process");
-		Scene0_2.addChild(ProtoDeclare0_2_0);
-		ViewpointObject Viewpoint0_2_2 = new ViewpointObject();
-		Viewpoint0_2_2.setDescription("Process pipes");
-		Viewpoint0_2_2.setOrientation(new float[] {1f,0f,0f,-0.4f});
-		Viewpoint0_2_2.setPosition(new float[] {0f,5f,12f});
-		Scene0_2.addChild(Viewpoint0_2_2);
-		TransformObject Transform0_2_4 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_4_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_4_0.setName("Process");
-		Transform0_2_4.addChild(ProtoInstance0_2_4_0);
-		Transform0_2_4.setTranslation(new float[] {0f,-2.5f,0f});
-		Scene0_2.addChild(Transform0_2_4);
-		TransformObject Transform0_2_6 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_6_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_6_0.setName("Process");
-		Transform0_2_6.addChild(ProtoInstance0_2_6_0);
-		Scene0_2.addChild(Transform0_2_6);
-		TransformObject Transform0_2_8 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_8_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_8_0.setName("Process");
-		Transform0_2_8.addChild(ProtoInstance0_2_8_0);
-		Transform0_2_8.setTranslation(new float[] {0f,2.5f,0f});
-		Scene0_2.addChild(Transform0_2_8);
-		X3D0.setScene(Scene0_2);
-		X3D0.setProfile("Immersive");
-		X3D0.setVersion("3.3");
         ConfigurationProperties.setShowDefaultAttributes(true);
         ConfigurationProperties.setIndentCharacter(ConfigurationProperties.indentCharacter_DEFAULT);
         ConfigurationProperties.setIndentIncrement(ConfigurationProperties.indentIncrement_DEFAULT);
         ConfigurationProperties.setX3dCanonicalForm();
         ConfigurationProperties.initialize();
 	ConfigurationProperties.setXsltEngine(ConfigurationProperties.XSLT_ENGINE_nativeJava);
-	X3D0.toFileJSON(args[0]);
+	ConfigurationProperties.setDeleteIntermediateFiles(false);
+	new X3DObject()
+	.setProfile("Immersive")
+	.setVersion("3.3")
+	.setHead(new headObject()
+		.addMeta(new metaObject()
+			.setName("title")
+			.setContent("qq3.x3d")
+		)
+		.addMeta(new metaObject()
+			.setName("creator")
+			.setContent("John Carlson")
+		)
+		.addMeta(new metaObject()
+			.setName("translator")
+			.setContent("John Carlson")
+		)
+		.addMeta(new metaObject()
+			.setName("created")
+			.setContent("11 Jan 2015")
+		)
+		.addMeta(new metaObject()
+			.setName("revised")
+			.setContent("11 Jan 2015")
+		)
+		.addMeta(new metaObject()
+			.setName("description")
+			.setContent("12 extrusions to test prototype expander")
+		)
+		.addMeta(new metaObject()
+			.setName("identifier")
+			.setContent("http://coderextreme.net/x3d/qq3.x3d")
+		)
+		.addMeta(new metaObject()
+			.setName("generator")
+			.setContent("manual")
+		)
+	)
+	.setScene(new SceneObject()
+		.addChild(new ProtoDeclareObject()
+			.setName("Process")
+			.setProtoBody(new ProtoBodyObject()
+				.addChild(new GroupObject()
+					.addComments(new CommentsBlock("left"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDEF("MaterialLeftDown")
+									.setDiffuseColor(new float[] {0.7f,1f,0f})
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setSpine(new float[] {-2.5f,0f,0f,-1.5f,0f,0f})
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+							)
+						)
+					)
+					.addComments(new CommentsBlock("right"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDEF("MaterialUpRight")
+									.setDiffuseColor(new float[] {0f,0.7f,1f})
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setSpine(new float[] {1.5f,0f,0f,2.5f,0f,0f})
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+							)
+						)
+					)
+					.addComments(new CommentsBlock("up"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setUSE("MaterialUpRight")
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setSpine(new float[] {0f,1.5f,0f,0f,2.5f,0f})
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+							)
+						)
+					)
+					.addComments(new CommentsBlock("down"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setUSE("MaterialLeftDown")
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setSpine(new float[] {0f,-2.5f,0f,0f,-1.5f,0f})
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+							)
+						)
+					)
+				)
+			)
+		)
+		.addChild(new ViewpointObject()
+			.setDescription("Process pipes")
+			.setOrientation(new float[] {1f,0f,0f,-0.4f})
+			.setPosition(new float[] {0f,5f,12f})
+		)
+		.addChild(new TransformObject()
+			.setTranslation(new float[] {0f,-2.5f,0f})
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+		.addChild(new TransformObject()
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+		.addChild(new TransformObject()
+			.setTranslation(new float[] {0f,2.5f,0f})
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+	)
+	.toFileJSON("qq3.new.json");
 	}
 }

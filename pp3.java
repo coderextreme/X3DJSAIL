@@ -73,214 +73,218 @@ import org.web3d.x3d.sai.Time.*;
 import org.web3d.x3d.sai.VolumeRendering.*;
 public class pp3 {
 	public static void main(String[] args) {
-		X3DObject X3D0 = new X3DObject();
-		headObject head0_0 = new headObject();
-		metaObject meta0_0_0 = new metaObject();
-		meta0_0_0.setName("title");
-		meta0_0_0.setContent("pp3.x3d");
-		head0_0.addMeta(meta0_0_0);
-		metaObject meta0_0_2 = new metaObject();
-		meta0_0_2.setName("creator");
-		meta0_0_2.setContent("John Carlson");
-		head0_0.addMeta(meta0_0_2);
-		metaObject meta0_0_4 = new metaObject();
-		meta0_0_4.setName("translator");
-		meta0_0_4.setContent("John Carlson");
-		head0_0.addMeta(meta0_0_4);
-		metaObject meta0_0_6 = new metaObject();
-		meta0_0_6.setName("created");
-		meta0_0_6.setContent("5 May 2015");
-		head0_0.addMeta(meta0_0_6);
-		metaObject meta0_0_8 = new metaObject();
-		meta0_0_8.setName("revised");
-		meta0_0_8.setContent("2 Dec 2015");
-		head0_0.addMeta(meta0_0_8);
-		metaObject meta0_0_10 = new metaObject();
-		meta0_0_10.setName("description");
-		meta0_0_10.setContent("A process pipeline between three spheres (try typing on spheres and blue");
-		head0_0.addMeta(meta0_0_10);
-		metaObject meta0_0_12 = new metaObject();
-		meta0_0_12.setName("identifier");
-		meta0_0_12.setContent("http://coderextreme.net/x3d/pp3.x3d");
-		head0_0.addMeta(meta0_0_12);
-		metaObject meta0_0_14 = new metaObject();
-		meta0_0_14.setName("generator");
-		meta0_0_14.setContent("manual");
-		head0_0.addMeta(meta0_0_14);
-		X3D0.setHead(head0_0);
-		SceneObject Scene0_2 = new SceneObject();
-		ProtoDeclareObject ProtoDeclare0_2_0 = new ProtoDeclareObject();
-		ProtoBodyObject ProtoBody0_2_0_0 = new ProtoBodyObject();
-		GroupObject Group0_2_0_0_0 = new GroupObject();
-		CommentsBlock commentsBlock0_2_0_0_0_0 = new CommentsBlock("left");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_0);
-		TransformObject Transform0_2_0_0_0_1 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_1_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_1_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_1_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_1_0_0.setMaterial(Material0_2_0_0_0_1_0_0_0);
-		Material0_2_0_0_0_1_0_0_0.setDiffuseColor(new float[] {0.7f,1f,0f});
-		Material0_2_0_0_0_1_0_0_0.setTransparency(0.5f);
-		Shape0_2_0_0_0_1_0.setAppearance(Appearance0_2_0_0_0_1_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_1_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_1_0.setGeometry(Extrusion0_2_0_0_0_1_0_2);
-		Extrusion0_2_0_0_0_1_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_1_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Extrusion0_2_0_0_0_1_0_2.setSpine(new float[] {-2.5f,0f,0f,-1.5f,0f,0f});
-		Transform0_2_0_0_0_1.addChild(Shape0_2_0_0_0_1_0);
-		CommentsBlock commentsBlock0_2_0_0_0_1_2 = new CommentsBlock("<Transform translation=\"-2.5 0 0\"> <Shape> <Text DEF=\"LeftString\" string='\"l\"'/> </Shape> </Transform> <StringSensor DEF=\"LeftSensor\" enabled=\"false\"/> <TouchSensor DEF=\"LeftTouch\" enabled=\"true\"/>");
-		Transform0_2_0_0_0_1.addComments(commentsBlock0_2_0_0_0_1_2);
-		Transform0_2_0_0_0_1.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_1);
-		CommentsBlock commentsBlock0_2_0_0_0_3 = new CommentsBlock("right");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_3);
-		TransformObject Transform0_2_0_0_0_4 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_4_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_4_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_4_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_4_0_0.setMaterial(Material0_2_0_0_0_4_0_0_0);
-		Material0_2_0_0_0_4_0_0_0.setDiffuseColor(new float[] {0f,0.7f,1f});
-		Material0_2_0_0_0_4_0_0_0.setTransparency(0.5f);
-		Shape0_2_0_0_0_4_0.setAppearance(Appearance0_2_0_0_0_4_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_4_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_4_0.setGeometry(Extrusion0_2_0_0_0_4_0_2);
-		Extrusion0_2_0_0_0_4_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_4_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Extrusion0_2_0_0_0_4_0_2.setSpine(new float[] {1.5f,0f,0f,2.5f,0f,0f});
-		Transform0_2_0_0_0_4.addChild(Shape0_2_0_0_0_4_0);
-		TransformObject Transform0_2_0_0_0_4_2 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_4_2_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_4_2_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_4_2_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_4_2_0_0.setMaterial(Material0_2_0_0_0_4_2_0_0_0);
-		Material0_2_0_0_0_4_2_0_0_0.setDEF("MaterialLightBlue");
-		Material0_2_0_0_0_4_2_0_0_0.setDiffuseColor(new float[] {1f,1f,1f});
-		Shape0_2_0_0_0_4_2_0.setAppearance(Appearance0_2_0_0_0_4_2_0_0);
-		TextObject Text0_2_0_0_0_4_2_0_2 = new TextObject();
-		Shape0_2_0_0_0_4_2_0.setGeometry(Text0_2_0_0_0_4_2_0_2);
-		Text0_2_0_0_0_4_2_0_2.setDEF("RightString");
-		Text0_2_0_0_0_4_2_0_2.setString(new String[] {"r"});
-		Transform0_2_0_0_0_4_2.addChild(Shape0_2_0_0_0_4_2_0);
-		Transform0_2_0_0_0_4_2.setTranslation(new float[] {2f,0f,0f});
-		Transform0_2_0_0_0_4.addChild(Transform0_2_0_0_0_4_2);
-		StringSensorObject StringSensor0_2_0_0_0_4_4 = new StringSensorObject();
-		StringSensor0_2_0_0_0_4_4.setDEF("RightSensor");
-		StringSensor0_2_0_0_0_4_4.setEnabled(false);
-		Transform0_2_0_0_0_4.addChild(StringSensor0_2_0_0_0_4_4);
-		TouchSensorObject TouchSensor0_2_0_0_0_4_6 = new TouchSensorObject();
-		TouchSensor0_2_0_0_0_4_6.setDescription("touch to activate");
-		TouchSensor0_2_0_0_0_4_6.setDEF("RightTouch");
-		Transform0_2_0_0_0_4.addChild(TouchSensor0_2_0_0_0_4_6);
-		Transform0_2_0_0_0_4.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_4);
-		CommentsBlock commentsBlock0_2_0_0_0_6 = new CommentsBlock("up");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_6);
-		TransformObject Transform0_2_0_0_0_7 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_7_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_7_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_7_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_7_0_0.setMaterial(Material0_2_0_0_0_7_0_0_0);
-		Material0_2_0_0_0_7_0_0_0.setDiffuseColor(new float[] {0f,0.7f,1f});
-		Material0_2_0_0_0_7_0_0_0.setTransparency(0.5f);
-		Shape0_2_0_0_0_7_0.setAppearance(Appearance0_2_0_0_0_7_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_7_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_7_0.setGeometry(Extrusion0_2_0_0_0_7_0_2);
-		Extrusion0_2_0_0_0_7_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_7_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Extrusion0_2_0_0_0_7_0_2.setSpine(new float[] {0f,1.5f,0f,0f,2.5f,0f});
-		Transform0_2_0_0_0_7.addChild(Shape0_2_0_0_0_7_0);
-		TransformObject Transform0_2_0_0_0_7_2 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_7_2_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_7_2_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_7_2_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_7_2_0_0.setMaterial(Material0_2_0_0_0_7_2_0_0_0);
-		Material0_2_0_0_0_7_2_0_0_0.setUSE("MaterialLightBlue");
-		Shape0_2_0_0_0_7_2_0.setAppearance(Appearance0_2_0_0_0_7_2_0_0);
-		TextObject Text0_2_0_0_0_7_2_0_2 = new TextObject();
-		Shape0_2_0_0_0_7_2_0.setGeometry(Text0_2_0_0_0_7_2_0_2);
-		Text0_2_0_0_0_7_2_0_2.setDEF("UpString");
-		Text0_2_0_0_0_7_2_0_2.setString(new String[] {"u"});
-		Transform0_2_0_0_0_7_2.addChild(Shape0_2_0_0_0_7_2_0);
-		Transform0_2_0_0_0_7_2.setTranslation(new float[] {-0.5f,2f,0f});
-		Transform0_2_0_0_0_7.addChild(Transform0_2_0_0_0_7_2);
-		StringSensorObject StringSensor0_2_0_0_0_7_4 = new StringSensorObject();
-		StringSensor0_2_0_0_0_7_4.setDEF("UpSensor");
-		StringSensor0_2_0_0_0_7_4.setEnabled(false);
-		Transform0_2_0_0_0_7.addChild(StringSensor0_2_0_0_0_7_4);
-		TouchSensorObject TouchSensor0_2_0_0_0_7_6 = new TouchSensorObject();
-		TouchSensor0_2_0_0_0_7_6.setDescription("touch to activate");
-		TouchSensor0_2_0_0_0_7_6.setDEF("UpTouch");
-		Transform0_2_0_0_0_7.addChild(TouchSensor0_2_0_0_0_7_6);
-		Transform0_2_0_0_0_7.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_7);
-		CommentsBlock commentsBlock0_2_0_0_0_9 = new CommentsBlock("down");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_9);
-		TransformObject Transform0_2_0_0_0_10 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_10_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_10_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_10_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_10_0_0.setMaterial(Material0_2_0_0_0_10_0_0_0);
-		Material0_2_0_0_0_10_0_0_0.setDiffuseColor(new float[] {0.7f,1f,0f});
-		Material0_2_0_0_0_10_0_0_0.setTransparency(0.5f);
-		Shape0_2_0_0_0_10_0.setAppearance(Appearance0_2_0_0_0_10_0_0);
-		ExtrusionObject Extrusion0_2_0_0_0_10_0_2 = new ExtrusionObject();
-		Shape0_2_0_0_0_10_0.setGeometry(Extrusion0_2_0_0_0_10_0_2);
-		Extrusion0_2_0_0_0_10_0_2.setCreaseAngle(0.785f);
-		Extrusion0_2_0_0_0_10_0_2.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f});
-		Extrusion0_2_0_0_0_10_0_2.setSpine(new float[] {0f,-2.5f,0f,0f,-1.5f,0f});
-		Transform0_2_0_0_0_10.addChild(Shape0_2_0_0_0_10_0);
-		CommentsBlock commentsBlock0_2_0_0_0_10_2 = new CommentsBlock("<Transform translation=\"-0.5 -2.5 0\"> <Shape> <Text DEF=\"DownString\" string='\"d\"'/> </Shape> </Transform> <StringSensor DEF=\"DownSensor\" enabled=\"false\"/> <TouchSensor description='touch to activate' DEF=\"DownTouch\" enabled=\"true\"/>");
-		Transform0_2_0_0_0_10.addComments(commentsBlock0_2_0_0_0_10_2);
-		Transform0_2_0_0_0_10.setScale(new float[] {0.5f,0.5f,0.5f});
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_10);
-		CommentsBlock commentsBlock0_2_0_0_0_12 = new CommentsBlock("center");
-		Group0_2_0_0_0.addComments(commentsBlock0_2_0_0_0_12);
-		TransformObject Transform0_2_0_0_0_13 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_13_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_13_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_13_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_13_0_0.setMaterial(Material0_2_0_0_0_13_0_0_0);
-		Material0_2_0_0_0_13_0_0_0.setDiffuseColor(new float[] {1f,0f,0.7f});
-		Shape0_2_0_0_0_13_0.setAppearance(Appearance0_2_0_0_0_13_0_0);
-		SphereObject Sphere0_2_0_0_0_13_0_2 = new SphereObject();
-		Shape0_2_0_0_0_13_0.setGeometry(Sphere0_2_0_0_0_13_0_2);
-		Transform0_2_0_0_0_13.addChild(Shape0_2_0_0_0_13_0);
-		TransformObject Transform0_2_0_0_0_13_2 = new TransformObject();
-		ShapeObject Shape0_2_0_0_0_13_2_0 = new ShapeObject();
-		AppearanceObject Appearance0_2_0_0_0_13_2_0_0 = new AppearanceObject();
-		MaterialObject Material0_2_0_0_0_13_2_0_0_0 = new MaterialObject();
-		Appearance0_2_0_0_0_13_2_0_0.setMaterial(Material0_2_0_0_0_13_2_0_0_0);
-		Material0_2_0_0_0_13_2_0_0_0.setUSE("MaterialLightBlue");
-		Shape0_2_0_0_0_13_2_0.setAppearance(Appearance0_2_0_0_0_13_2_0_0);
-		TextObject Text0_2_0_0_0_13_2_0_2 = new TextObject();
-		Shape0_2_0_0_0_13_2_0.setGeometry(Text0_2_0_0_0_13_2_0_2);
-		Text0_2_0_0_0_13_2_0_2.setDEF("CenterString");
-		Transform0_2_0_0_0_13_2.addChild(Shape0_2_0_0_0_13_2_0);
-		Transform0_2_0_0_0_13_2.setScale(new float[] {0.5f,0.5f,0.5f});
-		Transform0_2_0_0_0_13_2.setTranslation(new float[] {-0.5f,0f,1f});
-		Transform0_2_0_0_0_13.addChild(Transform0_2_0_0_0_13_2);
-		StringSensorObject StringSensor0_2_0_0_0_13_4 = new StringSensorObject();
-		StringSensor0_2_0_0_0_13_4.setDEF("CenterSensor");
-		StringSensor0_2_0_0_0_13_4.setEnabled(false);
-		Transform0_2_0_0_0_13.addChild(StringSensor0_2_0_0_0_13_4);
-		TouchSensorObject TouchSensor0_2_0_0_0_13_6 = new TouchSensorObject();
-		TouchSensor0_2_0_0_0_13_6.setDescription("touch to activate");
-		TouchSensor0_2_0_0_0_13_6.setDEF("CenterTouch");
-		Transform0_2_0_0_0_13.addChild(TouchSensor0_2_0_0_0_13_6);
-		Group0_2_0_0_0.addChild(Transform0_2_0_0_0_13);
-		ProtoBody0_2_0_0.addChild(Group0_2_0_0_0);
-		ScriptObject Script0_2_0_0_2 = new ScriptObject();
-		fieldObject field0_2_0_0_2_0 = new fieldObject();
-		field0_2_0_0_2_0.setName("set_rightstring");
-		field0_2_0_0_2_0.setAccessType("inputOnly");
-		field0_2_0_0_2_0.setType("SFString");
-		Script0_2_0_0_2.addField(field0_2_0_0_2_0);
-		fieldObject field0_2_0_0_2_2 = new fieldObject();
-		field0_2_0_0_2_2.setName("rightlines");
-		field0_2_0_0_2_2.setAccessType("outputOnly");
-		field0_2_0_0_2_2.setType("MFString");
-		Script0_2_0_0_2.addField(field0_2_0_0_2_2);
-		Script0_2_0_0_2.setSourceCode("ecmascript:\n"+
+        ConfigurationProperties.setShowDefaultAttributes(true);
+        ConfigurationProperties.setIndentCharacter(ConfigurationProperties.indentCharacter_DEFAULT);
+        ConfigurationProperties.setIndentIncrement(ConfigurationProperties.indentIncrement_DEFAULT);
+        ConfigurationProperties.setX3dCanonicalForm();
+        ConfigurationProperties.initialize();
+	ConfigurationProperties.setXsltEngine(ConfigurationProperties.XSLT_ENGINE_nativeJava);
+	ConfigurationProperties.setDeleteIntermediateFiles(false);
+	new X3DObject()
+	.setProfile("Immersive")
+	.setVersion("3.3")
+	.setHead(new headObject()
+		.addMeta(new metaObject()
+			.setName("title")
+			.setContent("pp3.x3d")
+		)
+		.addMeta(new metaObject()
+			.setName("creator")
+			.setContent("John Carlson")
+		)
+		.addMeta(new metaObject()
+			.setName("translator")
+			.setContent("John Carlson")
+		)
+		.addMeta(new metaObject()
+			.setName("created")
+			.setContent("5 May 2015")
+		)
+		.addMeta(new metaObject()
+			.setName("revised")
+			.setContent("2 Dec 2015")
+		)
+		.addMeta(new metaObject()
+			.setName("description")
+			.setContent("A process pipeline between three spheres (try typing on spheres and blue")
+		)
+		.addMeta(new metaObject()
+			.setName("identifier")
+			.setContent("http://coderextreme.net/x3d/pp3.x3d")
+		)
+		.addMeta(new metaObject()
+			.setName("generator")
+			.setContent("manual")
+		)
+	)
+	.setScene(new SceneObject()
+		.addChild(new ProtoDeclareObject()
+			.setName("Process")
+			.setProtoBody(new ProtoBodyObject()
+				.addChild(new GroupObject()
+					.addComments(new CommentsBlock("left"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDiffuseColor(new float[] {0.7f,1f,0f})
+									.setTransparency(0.5f)
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+								.setSpine(new float[] {-2.5f,0f,0f,-1.5f,0f,0f})
+							)
+						)
+						.addComments(new CommentsBlock("<Transform translation=\"-2.5 0 0\"> <Shape> <Text DEF=\"LeftString\" string='\"l\"'/> </Shape> </Transform> <StringSensor DEF=\"LeftSensor\" enabled=\"false\"/> <TouchSensor DEF=\"LeftTouch\" enabled=\"true\"/>"))
+					)
+					.addComments(new CommentsBlock("right"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDiffuseColor(new float[] {0f,0.7f,1f})
+									.setTransparency(0.5f)
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+								.setSpine(new float[] {1.5f,0f,0f,2.5f,0f,0f})
+							)
+						)
+						.addChild(new TransformObject()
+							.setTranslation(new float[] {2f,0f,0f})
+							.addChild(new ShapeObject()
+								.setAppearance(new AppearanceObject()
+									.setMaterial(new MaterialObject()
+										.setDEF("MaterialLightBlue")
+										.setDiffuseColor(new float[] {1f,1f,1f})
+									)
+								)
+								.setGeometry(new TextObject()
+									.setDEF("RightString")
+									.setString(new String[] {"r"})
+								)
+							)
+						)
+						.addChild(new StringSensorObject()
+							.setDEF("RightSensor")
+							.setEnabled(false)
+						)
+						.addChild(new TouchSensorObject()
+							.setDescription("touch to activate")
+							.setDEF("RightTouch")
+						)
+					)
+					.addComments(new CommentsBlock("up"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDiffuseColor(new float[] {0f,0.7f,1f})
+									.setTransparency(0.5f)
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+								.setSpine(new float[] {0f,1.5f,0f,0f,2.5f,0f})
+							)
+						)
+						.addChild(new TransformObject()
+							.setTranslation(new float[] {-0.5f,2f,0f})
+							.addChild(new ShapeObject()
+								.setAppearance(new AppearanceObject()
+									.setMaterial(new MaterialObject()
+										.setUSE("MaterialLightBlue")
+									)
+								)
+								.setGeometry(new TextObject()
+									.setDEF("UpString")
+									.setString(new String[] {"u"})
+								)
+							)
+						)
+						.addChild(new StringSensorObject()
+							.setDEF("UpSensor")
+							.setEnabled(false)
+						)
+						.addChild(new TouchSensorObject()
+							.setDescription("touch to activate")
+							.setDEF("UpTouch")
+						)
+					)
+					.addComments(new CommentsBlock("down"))
+					.addChild(new TransformObject()
+						.setScale(new float[] {0.5f,0.5f,0.5f})
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDiffuseColor(new float[] {0.7f,1f,0f})
+									.setTransparency(0.5f)
+								)
+							)
+							.setGeometry(new ExtrusionObject()
+								.setCreaseAngle(0.785f)
+								.setCrossSection(new float[] {1f,0f,0.92f,-0.38f,0.71f,-0.71f,0.38f,-0.92f,0f,-1f,-0.38f,-0.92f,-0.71f,-0.71f,-0.92f,-0.38f,-1f,0f,-0.92f,0.38f,-0.71f,0.71f,-0.38f,0.92f,0f,1f,0.38f,0.92f,0.71f,0.71f,0.92f,0.38f,1f,0f})
+								.setSpine(new float[] {0f,-2.5f,0f,0f,-1.5f,0f})
+							)
+						)
+						.addComments(new CommentsBlock("<Transform translation=\"-0.5 -2.5 0\"> <Shape> <Text DEF=\"DownString\" string='\"d\"'/> </Shape> </Transform> <StringSensor DEF=\"DownSensor\" enabled=\"false\"/> <TouchSensor description='touch to activate' DEF=\"DownTouch\" enabled=\"true\"/>"))
+					)
+					.addComments(new CommentsBlock("center"))
+					.addChild(new TransformObject()
+						.addChild(new ShapeObject()
+							.setAppearance(new AppearanceObject()
+								.setMaterial(new MaterialObject()
+									.setDiffuseColor(new float[] {1f,0f,0.7f})
+								)
+							)
+							.setGeometry(new SphereObject()
+							)
+						)
+						.addChild(new TransformObject()
+							.setScale(new float[] {0.5f,0.5f,0.5f})
+							.setTranslation(new float[] {-0.5f,0f,1f})
+							.addChild(new ShapeObject()
+								.setAppearance(new AppearanceObject()
+									.setMaterial(new MaterialObject()
+										.setUSE("MaterialLightBlue")
+									)
+								)
+								.setGeometry(new TextObject()
+									.setDEF("CenterString")
+								)
+							)
+						)
+						.addChild(new StringSensorObject()
+							.setDEF("CenterSensor")
+							.setEnabled(false)
+						)
+						.addChild(new TouchSensorObject()
+							.setDescription("touch to activate")
+							.setDEF("CenterTouch")
+						)
+					)
+				)
+				.addChild(new ScriptObject()
+					.setDEF("RightSingleToMultiString")
+					.addField(new fieldObject()
+						.setName("set_rightstring")
+						.setAccessType("inputOnly")
+						.setType("SFString")
+					)
+					.addField(new fieldObject()
+						.setName("rightlines")
+						.setAccessType("outputOnly")
+						.setType("MFString")
+					)
+					.setSourceCode("ecmascript:\n"+
 "\n"+
 "function initialize() {\n"+
 "	rightlines = new MFString(\"\");\n"+
@@ -289,21 +293,21 @@ public class pp3 {
 "function set_rightstring(rightstr) {\n"+
 "	rightlines = new MFString(rightstr);\n"+
 "}\n"+
-"");
-		Script0_2_0_0_2.setDEF("RightSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(Script0_2_0_0_2);
-		ScriptObject Script0_2_0_0_4 = new ScriptObject();
-		fieldObject field0_2_0_0_4_0 = new fieldObject();
-		field0_2_0_0_4_0.setName("set_upstring");
-		field0_2_0_0_4_0.setAccessType("inputOnly");
-		field0_2_0_0_4_0.setType("SFString");
-		Script0_2_0_0_4.addField(field0_2_0_0_4_0);
-		fieldObject field0_2_0_0_4_2 = new fieldObject();
-		field0_2_0_0_4_2.setName("uplines");
-		field0_2_0_0_4_2.setAccessType("outputOnly");
-		field0_2_0_0_4_2.setType("MFString");
-		Script0_2_0_0_4.addField(field0_2_0_0_4_2);
-		Script0_2_0_0_4.setSourceCode("ecmascript:\n"+
+"")
+				)
+				.addChild(new ScriptObject()
+					.setDEF("UpSingleToMultiString")
+					.addField(new fieldObject()
+						.setName("set_upstring")
+						.setAccessType("inputOnly")
+						.setType("SFString")
+					)
+					.addField(new fieldObject()
+						.setName("uplines")
+						.setAccessType("outputOnly")
+						.setType("MFString")
+					)
+					.setSourceCode("ecmascript:\n"+
 "\n"+
 "function initialize() {\n"+
 "	uplines = new MFString(\"\");\n"+
@@ -312,21 +316,21 @@ public class pp3 {
 "function set_upstring(upstr) {\n"+
 "	uplines = new MFString(upstr);\n"+
 "}\n"+
-"");
-		Script0_2_0_0_4.setDEF("UpSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(Script0_2_0_0_4);
-		ScriptObject Script0_2_0_0_6 = new ScriptObject();
-		fieldObject field0_2_0_0_6_0 = new fieldObject();
-		field0_2_0_0_6_0.setName("set_centerstring");
-		field0_2_0_0_6_0.setAccessType("inputOnly");
-		field0_2_0_0_6_0.setType("SFString");
-		Script0_2_0_0_6.addField(field0_2_0_0_6_0);
-		fieldObject field0_2_0_0_6_2 = new fieldObject();
-		field0_2_0_0_6_2.setName("centerlines");
-		field0_2_0_0_6_2.setAccessType("outputOnly");
-		field0_2_0_0_6_2.setType("MFString");
-		Script0_2_0_0_6.addField(field0_2_0_0_6_2);
-		Script0_2_0_0_6.setSourceCode("ecmascript:\n"+
+"")
+				)
+				.addChild(new ScriptObject()
+					.setDEF("CenterSingleToMultiString")
+					.addField(new fieldObject()
+						.setName("set_centerstring")
+						.setAccessType("inputOnly")
+						.setType("SFString")
+					)
+					.addField(new fieldObject()
+						.setName("centerlines")
+						.setAccessType("outputOnly")
+						.setType("MFString")
+					)
+					.setSourceCode("ecmascript:\n"+
 "\n"+
 "function initialize() {\n"+
 "	centerlines = new MFString(\"\");\n"+
@@ -335,99 +339,89 @@ public class pp3 {
 "function set_centerstring(centerstr) {\n"+
 "	centerlines = new MFString(centerstr);\n"+
 "}\n"+
-"");
-		Script0_2_0_0_6.setDEF("CenterSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(Script0_2_0_0_6);
-		ROUTEObject ROUTE0_2_0_0_8 = new ROUTEObject();
-		ROUTE0_2_0_0_8.setFromField("enteredText");
-		ROUTE0_2_0_0_8.setFromNode("CenterSensor");
-		ROUTE0_2_0_0_8.setToField("set_centerstring");
-		ROUTE0_2_0_0_8.setToNode("CenterSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_8);
-		ROUTEObject ROUTE0_2_0_0_10 = new ROUTEObject();
-		ROUTE0_2_0_0_10.setFromField("centerlines");
-		ROUTE0_2_0_0_10.setFromNode("CenterSingleToMultiString");
-		ROUTE0_2_0_0_10.setToField("set_string");
-		ROUTE0_2_0_0_10.setToNode("CenterString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_10);
-		ROUTEObject ROUTE0_2_0_0_12 = new ROUTEObject();
-		ROUTE0_2_0_0_12.setFromField("isOver");
-		ROUTE0_2_0_0_12.setFromNode("CenterTouch");
-		ROUTE0_2_0_0_12.setToField("set_enabled");
-		ROUTE0_2_0_0_12.setToNode("CenterSensor");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_12);
-		ROUTEObject ROUTE0_2_0_0_14 = new ROUTEObject();
-		ROUTE0_2_0_0_14.setFromField("enteredText");
-		ROUTE0_2_0_0_14.setFromNode("RightSensor");
-		ROUTE0_2_0_0_14.setToField("set_rightstring");
-		ROUTE0_2_0_0_14.setToNode("RightSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_14);
-		ROUTEObject ROUTE0_2_0_0_16 = new ROUTEObject();
-		ROUTE0_2_0_0_16.setFromField("rightlines");
-		ROUTE0_2_0_0_16.setFromNode("RightSingleToMultiString");
-		ROUTE0_2_0_0_16.setToField("set_string");
-		ROUTE0_2_0_0_16.setToNode("RightString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_16);
-		ROUTEObject ROUTE0_2_0_0_18 = new ROUTEObject();
-		ROUTE0_2_0_0_18.setFromField("isOver");
-		ROUTE0_2_0_0_18.setFromNode("RightTouch");
-		ROUTE0_2_0_0_18.setToField("set_enabled");
-		ROUTE0_2_0_0_18.setToNode("RightSensor");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_18);
-		ROUTEObject ROUTE0_2_0_0_20 = new ROUTEObject();
-		ROUTE0_2_0_0_20.setFromField("enteredText");
-		ROUTE0_2_0_0_20.setFromNode("UpSensor");
-		ROUTE0_2_0_0_20.setToField("set_upstring");
-		ROUTE0_2_0_0_20.setToNode("UpSingleToMultiString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_20);
-		ROUTEObject ROUTE0_2_0_0_22 = new ROUTEObject();
-		ROUTE0_2_0_0_22.setFromField("uplines");
-		ROUTE0_2_0_0_22.setFromNode("UpSingleToMultiString");
-		ROUTE0_2_0_0_22.setToField("set_string");
-		ROUTE0_2_0_0_22.setToNode("UpString");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_22);
-		ROUTEObject ROUTE0_2_0_0_24 = new ROUTEObject();
-		ROUTE0_2_0_0_24.setFromField("isOver");
-		ROUTE0_2_0_0_24.setFromNode("UpTouch");
-		ROUTE0_2_0_0_24.setToField("set_enabled");
-		ROUTE0_2_0_0_24.setToNode("UpSensor");
-		ProtoBody0_2_0_0.addChild(ROUTE0_2_0_0_24);
-		ProtoDeclare0_2_0.setProtoBody(ProtoBody0_2_0_0);
-		ProtoDeclare0_2_0.setName("Process");
-		Scene0_2.addChild(ProtoDeclare0_2_0);
-		NavigationInfoObject NavigationInfo0_2_2 = new NavigationInfoObject();
-		Scene0_2.addChild(NavigationInfo0_2_2);
-		ViewpointObject Viewpoint0_2_4 = new ViewpointObject();
-		Viewpoint0_2_4.setDescription("Process pipes");
-		Viewpoint0_2_4.setOrientation(new float[] {1f,0f,0f,-0.4f});
-		Viewpoint0_2_4.setPosition(new float[] {0f,5f,12f});
-		Scene0_2.addChild(Viewpoint0_2_4);
-		TransformObject Transform0_2_6 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_6_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_6_0.setName("Process");
-		Transform0_2_6.addChild(ProtoInstance0_2_6_0);
-		Transform0_2_6.setTranslation(new float[] {0f,-2.5f,0f});
-		Scene0_2.addChild(Transform0_2_6);
-		TransformObject Transform0_2_8 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_8_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_8_0.setName("Process");
-		Transform0_2_8.addChild(ProtoInstance0_2_8_0);
-		Scene0_2.addChild(Transform0_2_8);
-		TransformObject Transform0_2_10 = new TransformObject();
-		ProtoInstanceObject ProtoInstance0_2_10_0 = new ProtoInstanceObject();
-		ProtoInstance0_2_10_0.setName("Process");
-		Transform0_2_10.addChild(ProtoInstance0_2_10_0);
-		Transform0_2_10.setTranslation(new float[] {0f,2.5f,0f});
-		Scene0_2.addChild(Transform0_2_10);
-		X3D0.setScene(Scene0_2);
-		X3D0.setProfile("Immersive");
-		X3D0.setVersion("3.3");
-        ConfigurationProperties.setShowDefaultAttributes(true);
-        ConfigurationProperties.setIndentCharacter(ConfigurationProperties.indentCharacter_DEFAULT);
-        ConfigurationProperties.setIndentIncrement(ConfigurationProperties.indentIncrement_DEFAULT);
-        ConfigurationProperties.setX3dCanonicalForm();
-        ConfigurationProperties.initialize();
-	ConfigurationProperties.setXsltEngine(ConfigurationProperties.XSLT_ENGINE_nativeJava);
-	X3D0.toFileJSON(args[0]);
+"")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("enteredText")
+					.setFromNode("CenterSensor")
+					.setToField("set_centerstring")
+					.setToNode("CenterSingleToMultiString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("centerlines")
+					.setFromNode("CenterSingleToMultiString")
+					.setToField("set_string")
+					.setToNode("CenterString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("isOver")
+					.setFromNode("CenterTouch")
+					.setToField("set_enabled")
+					.setToNode("CenterSensor")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("enteredText")
+					.setFromNode("RightSensor")
+					.setToField("set_rightstring")
+					.setToNode("RightSingleToMultiString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("rightlines")
+					.setFromNode("RightSingleToMultiString")
+					.setToField("set_string")
+					.setToNode("RightString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("isOver")
+					.setFromNode("RightTouch")
+					.setToField("set_enabled")
+					.setToNode("RightSensor")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("enteredText")
+					.setFromNode("UpSensor")
+					.setToField("set_upstring")
+					.setToNode("UpSingleToMultiString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("uplines")
+					.setFromNode("UpSingleToMultiString")
+					.setToField("set_string")
+					.setToNode("UpString")
+				)
+				.addChild(new ROUTEObject()
+					.setFromField("isOver")
+					.setFromNode("UpTouch")
+					.setToField("set_enabled")
+					.setToNode("UpSensor")
+				)
+			)
+		)
+		.addChild(new NavigationInfoObject()
+		)
+		.addChild(new ViewpointObject()
+			.setDescription("Process pipes")
+			.setOrientation(new float[] {1f,0f,0f,-0.4f})
+			.setPosition(new float[] {0f,5f,12f})
+		)
+		.addChild(new TransformObject()
+			.setTranslation(new float[] {0f,-2.5f,0f})
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+		.addChild(new TransformObject()
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+		.addChild(new TransformObject()
+			.setTranslation(new float[] {0f,2.5f,0f})
+			.addChild(new ProtoInstanceObject()
+				.setName("Process")
+			)
+		)
+	)
+	.toFileJSON("pp3.new.json");
 	}
 }
