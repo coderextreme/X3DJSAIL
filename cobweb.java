@@ -78,7 +78,6 @@ public class cobweb {
         ConfigurationProperties.setIndentIncrement(ConfigurationProperties.indentIncrement_DEFAULT);
         ConfigurationProperties.setX3dCanonicalForm();
         ConfigurationProperties.initialize();
-	ConfigurationProperties.setXsltEngine(ConfigurationProperties.XSLT_ENGINE_nativeJava);
 	ConfigurationProperties.setDeleteIntermediateFiles(false);
 	new X3DObject()
 	.setProfile("Immersive")
